@@ -51,3 +51,6 @@ In production, it is recommended to set the environment variables using the opti
 ## License
 
 [MIT](https://github.com/hoangvvo/nextjs-mongodb-app/blob/master/LICENSE)
+
+## Thanks
+Thanks to Derek Sams for his [blog post](https://medium.com/@dereksams/building-a-react-app-with-the-plaid-api-93e45ae61b58) explaining how to get this set up on a `create-react-app` project. Helped me a lot!
