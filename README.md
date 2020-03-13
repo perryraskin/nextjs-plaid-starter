@@ -48,6 +48,10 @@ I included an example BASE_URL environment variable in [.env.example](https://gi
 
 In production, it is recommended to set the environment variables using the options provided by your cloud/hosting providers. **Do not use or commit `.env`**.
 
+## Contributing
+
+Please let me know how I can make this better. Alternatively, feel free to submit a pull request. I will work on a `contributing.md` file.
+
 ## License
 
 [MIT](https://github.com/hoangvvo/nextjs-mongodb-app/blob/master/LICENSE)
