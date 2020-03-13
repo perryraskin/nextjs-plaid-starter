@@ -44,7 +44,7 @@ Start the development server by running `npm run dev`. The project supports usin
 
 #### `.env`
 
-I include my own MongoDB, Cloudinary, SendGrid environment variables in [.env.example](https://github.com/hoangvvo/nextjs-mongodb-app/blob/master/.env.example) for experimentation purposes. Please replace them with your owns and refrain from sabotaging them. You can try them in development by renaming it into `.env`.
+I included an example BASE_URL environment variable in [.env.example](https://github.com/perryraskin/nextjs-plaid-starter/blob/master/.env.example) for experimentation purposes. Please replace it with your own and refrain from sabotaging any variables that you include in general. You can try them in development by renaming it into `.env`.
 
 In production, it is recommended to set the environment variables using the options provided by your cloud/hosting providers. **Do not use or commit `.env`**.
 
