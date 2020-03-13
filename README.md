@@ -6,7 +6,7 @@ A boilerplate to quickly get a project running with Plaid using Next.js and Tail
 
 ## Features
 
-:heavy_check_mark: Express.js :heavy_check_mark: Serverless ready :heavy_check_mark: API Routes :heavy_check_mark: Middleware​    
+:heavy_check_mark: Express.js :heavy_check_mark: Serverless ready :heavy_check_mark: API Routes
 
 ## Guide
 
