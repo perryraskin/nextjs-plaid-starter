@@ -4,11 +4,11 @@
 
 A boilerplate to quickly get a project running with Plaid using Next.js and TailwindCSS.
 
-##Features
+## Features
 
 :heavy_check_mark: Express.js :heavy_check_mark: Serverless ready :heavy_check_mark: API Routes :heavy_check_mark: Middleware​    
 
-##Guide
+## Guide
 
 Go ahead and run `npm install` in the root folder. You'll also want to add a `.env` file based on the existing `.env.example` file. 
 
@@ -42,12 +42,12 @@ Start the development server by running `npm run dev`. The project supports usin
 
 **Styles (CSS):** This project contains styles from TailwindCSS. Some custom default styles have been implemented, which can be edited in `styles/tailwind.css` and in `tailwind.config.js`. 
 
-####`.env`
+#### `.env`
 
 I include my own MongoDB, Cloudinary, SendGrid environment variables in [.env.example](https://github.com/hoangvvo/nextjs-mongodb-app/blob/master/.env.example) for experimentation purposes. Please replace them with your owns and refrain from sabotaging them. You can try them in development by renaming it into `.env`.
 
 In production, it is recommended to set the environment variables using the options provided by your cloud/hosting providers. **Do not use or commit `.env`**.
 
-##License
+## License
 
 [MIT](https://github.com/hoangvvo/nextjs-mongodb-app/blob/master/LICENSE)
