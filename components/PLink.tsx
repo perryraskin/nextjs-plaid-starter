@@ -45,7 +45,7 @@ const PLink: NextPage<PLinkProps> = ({}) => {
         style={{}}
         className="mt-5 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
       >
-        Open Link and connect your bank!
+        Connect your bank!
       </PlaidLink>
       <div>
         <button 

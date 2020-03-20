@@ -1,7 +1,6 @@
 import nextConnect from 'next-connect';
-
-const plaid = require('plaid');
-const moment = require('moment');
+import plaid from 'plaid';
+import moment from 'moment';
 
 const PLAID_CLIENT_ID = process.env.PLAID_CLIENT_ID;
 const PLAID_SECRET = process.env.PLAID_SECRET_SANDBOX;
