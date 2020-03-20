@@ -18,8 +18,9 @@ This project is built to use the sandbox, but you can change to development when
 
 ### Dependencies
 
-- `next.js`
+- `next`
 - `react`
+- `next-connect`
 - `plaid`
 - `react-plaid-link`
 - `isomorphic-unfetch`
