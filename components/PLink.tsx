@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 import React, { useState, useEffect } from 'react';
 import PlaidLink from "react-plaid-link";
-import axios from "axios";
+import fetchSwal from '../lib/fetchSwal';
 
 interface PLinkProps {
 
@@ -12,9 +12,17 @@ const PLink: NextPage<PLinkProps> = ({}) => {
 
   function handleOnSuccess(public_token: any, metadata: any) {
     // send token to client server
-    axios.post("/auth/public_token", {
-      public_token: public_token
-    });
+    fetchSwal
+      .post('/api/plaid', {
+        public_token: public_token,
+        metadata: metadata,
+      })
+      .then((res) => {
+        if (res.ok !== false) {
+          setTransactions({ transactions: res.transactions });
+          //redirectTo('/');
+        }
+      });
   }
 
   function handleOnExit() {
@@ -23,9 +31,7 @@ const PLink: NextPage<PLinkProps> = ({}) => {
   }
 
   function handleClick(res: any) {
-    axios.get("/transactions").then(res => {
-      setTransactions({ transactions: res.data });
-    });
+    console.log('transactions:', transactions);
   }
   return(
     <div>
@@ -36,12 +42,17 @@ const PLink: NextPage<PLinkProps> = ({}) => {
         publicKey={process.env.PLAID_PUBLIC_KEY!}
         onExit={handleOnExit}
         onSuccess={handleOnSuccess}
-        className="test"
+        style={{}}
+        className="mt-5 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
       >
         Open Link and connect your bank!
       </PlaidLink>
       <div>
-        <button onClick={handleClick}>Get Transactions</button>
+        <button 
+          onClick={handleClick}
+          className="mt-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          View Transactions</button>
       </div>
     </div>
   )
