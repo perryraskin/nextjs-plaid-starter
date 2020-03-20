@@ -1,5 +1,4 @@
 import nextConnect from 'next-connect';
-//import middleware from '../../../middlewares/middleware';
 
 const plaid = require('plaid');
 const moment = require('moment');
@@ -22,8 +21,6 @@ export const client = new plaid.Client(
 );
 
 const handler = nextConnect();
-
-//handler.use(middleware);
 
 handler.post(async (req, res) => {
   const { metadata, public_token, userEmail } = req.body;
