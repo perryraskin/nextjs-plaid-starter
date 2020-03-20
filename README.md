@@ -6,13 +6,13 @@ A boilerplate to quickly get a project running with Plaid using Next.js and Tail
 
 ## Features
 
-:heavy_check_mark: Express.js :heavy_check_mark: Serverless ready :heavy_check_mark: API Routes :heavy_check_mark: TypeScript
+:heavy_check_mark: TypeScript :heavy_check_mark: Serverless ready :heavy_check_mark: API Routes
 
 ## Guide
 
 Go ahead and run `npm install` in the root folder. You'll also want to add a `.env` file based on the existing `.env.example` file. 
 
-You must define `PLAID_CLIENT_ID`, `PLAID_PUBLIC_KEY`, and `PLAID_SECRET_SANDBOX` in order to get started with Plaid's sandbox API. 
+You must define `PLAID_ENV`, `PLAID_CLIENT_ID`, `PLAID_PUBLIC_KEY`, and `PLAID_SECRET_SANDBOX` in order to get started with Plaid's sandbox API. 
 
 This project is built to use the sandbox, but you can change to development when ready. At that time, make sure to define `PLAID_SECRET`, which is a separate secret token Plaid gives you for the development API.
 
@@ -20,11 +20,9 @@ This project is built to use the sandbox, but you can change to development when
 
 - `next.js`
 - `react`
-- `express`
-- `dotenv`
 - `plaid`
 - `react-plaid-link`
-- `axios`
+- `isomorphic-unfetch`
 
 ### Environment Variables
 
