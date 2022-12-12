@@ -27,7 +27,7 @@
     "code-prettify": "^0.1.0",
     "cssnano": "^4.1.10",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "framer-motion": "^1.8.4",
     "glamor": "^2.20.40",
     "glamorous": "^5.0.0",
